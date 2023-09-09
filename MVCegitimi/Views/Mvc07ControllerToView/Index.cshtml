@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Controller dan view a taşıma";
+}
+
+<h2>Controller dan view a taşıma</h2>
+
+<div>
+    Ürün Kategorisi:@ViewBag.KategoriAdi
+    <hr />
+    Ürün Adı:@ViewData["UrunAdi"]
+    <hr />
+    @*Ürün Fİyat: @TempData["UrunFiyat"]*@
+    @("Ürün Fiyatı: " + String.Format("{0:c}", TempData["UrunFiyat"]))
+</div>
+

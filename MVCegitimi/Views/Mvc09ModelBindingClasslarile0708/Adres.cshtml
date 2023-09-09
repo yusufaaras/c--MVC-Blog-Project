@@ -1,0 +1,29 @@
+﻿@model MVCegitimi.Models.Adres
+
+@{
+    ViewBag.Title = "Adres";
+}
+
+<h2>Adres Bilgileri</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        Ad: @Html.EditorFor(model => model.Sehir)
+        <hr />
+        Soyad: @Html.EditorFor(model => model.ilce)
+        <hr />
+        Email: @Html.EditorFor(model => model.AcikAdres)
+        <hr />
+        <input id="Submit1" type="submit" value="Gönder" />
+    </div>
+
+}
+@{
+    @ViewBag.mesaj
+    <hr />
+    @ViewData["Vdata"]
+    <hr />
+    @TempData["Tdata"]
+}
+

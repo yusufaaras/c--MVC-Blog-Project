@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    
+}
+
+<h2>Html Helpers</h2>
+@Html.ActionLink("Hakkımızda", "About", "Home")
+<hr />
+
+@Html.CheckBox("cbOnay") onaylıyorum
+
+<hr />
+
+@Html.CheckBox("cbOnay",true) onaylıyorum
+
+<hr />
+
+@Html.TextBox("txtAd")
+
+<hr />
+
+@Html.Hidden("hfGizliELement","değer")
+<hr />
+
+@Html.TextArea("textAdres","istanbul")
+
+<hr />
+
+@Html.Password("txtPasword")
+

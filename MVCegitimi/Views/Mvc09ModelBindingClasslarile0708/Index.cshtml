@@ -1,0 +1,31 @@
+﻿@model MVCegitimi.Models.AnasayfaViewModel
+
+@{
+    ViewBag.Title = "Ana sayfa view model";
+}
+
+<h2>Ana sayfa view model</h2>
+<h3>Kullanıcı bilgileri</h3>
+ 
+<h4>@Model.kullaniciNesnesi.KullaniciAdi</h4>
+
+<h4>@Model.kullaniciNesnesi.Sifre</h4>
+
+<h4>@Model.kullaniciNesnesi.Ad</h4>
+
+<h4>@Model.kullaniciNesnesi.Soyad</h4>
+
+<h4>@Model.kullaniciNesnesi.Email</h4>
+<hr />
+
+<h3>Adres Bilgileri</h3>
+<h4>
+    @Model.adresNesnesi.Sehir
+</h4>
+<h4>
+    @Model.adresNesnesi.ilce
+</h4>
+<h4>
+    @Model.adresNesnesi.AcikAdres
+</h4>
+

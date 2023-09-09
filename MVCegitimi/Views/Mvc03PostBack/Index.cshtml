@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    string postmesaji = "post mesaji";
+    if (IsPost)
+    {
+        postmesaji = "post işlemi gerçekleşti";
+    }
+}
+
+<h2>Mvc Post Back</h2>
+
+<form method="post">
+    <input id="Text1" type="text" />
+    <input id="Submit1" type="submit" value="sunucuya gönder" />
+</form>
+
+<hr />
+
+@postmesaji
+

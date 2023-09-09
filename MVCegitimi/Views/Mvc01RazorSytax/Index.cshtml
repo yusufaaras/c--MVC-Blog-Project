@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    <h1>Değişken tanımlama</h1>
+    string[] adlar = new string[] { "yusuf", "ahmet", "veli" };
+
+    foreach (var item in adlar)
+    {
+        @(item+" ");
+        <hr />
+        <b>@item</b>
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        <hr />
+        @i;
+    }
+}
+
+<b></b>
+
+<h2>Index</h2>
+

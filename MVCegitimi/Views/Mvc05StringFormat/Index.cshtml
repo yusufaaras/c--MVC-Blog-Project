@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "String Format İle Formatlama";
+}
+
+<h2>String Format İle Formatlama</h2>
+
+<h3>Tarih formatları</h3>
+
+@{
+    DateTime tarih = DateTime.Now;
+    @("Ayın Günü-dd: " + String.Format("{0:dd}", tarih));
+    <br />
+    @("Haftanın Günü-dddd: " + String.Format("{0:dddd}", tarih));
+    <br />
+    @("Ay -MM: " + String.Format("{0:MM}", tarih));
+    <br />
+    @("yıl-yyyy: " + String.Format("{0:yyyy}", tarih));
+    <br />
+    @("saat -hh: " + String.Format("{0:hh}", tarih));
+    <br />
+    @("Dakika-mm: " + String.Format("{0:mm}", tarih));
+    <h3>Sayı Formatları</h3>
+    @("C: " + String.Format("{0:C}", 10,50));
+    <br />
+    @("0:###.## : " + String.Format("{0:###.##}", 1.5515));
+
+
+}
+

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Mvc Viewdan Controller a veri gönderme";
+
+    SelectListItem[] liste = new SelectListItem[3]
+    {
+        new SelectListItem(){Text="Bilgisayar"},
+        new SelectListItem(){Text="Monitör"},
+        new SelectListItem(){Text="Tablet"}
+
+    };
+}
+
+<h2>Mvc View dan Controller a veri gönderme</h2>
+<div>
+    @using (Html.BeginForm())
+            {
+                @Html.TextBox("Text1");
+    <hr />
+                @Html.DropDownList("List", liste);
+    <hr />
+                @Html.CheckBox("cbOnay")@("Onaylıyorum");
+    <hr />
+            <input id="Submit1" type="submit" value="Gönder" /> 
+            }
+</div>
+
+@{
+if (IsPost)
+            {
+                @ViewBag.mesaj
+                <hr />
+                @ViewData["Vdata"]
+                <hr />
+                @TempData["Tdata"]
+            }
+}
+
